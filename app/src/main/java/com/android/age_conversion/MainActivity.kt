@@ -17,12 +17,18 @@ class MainActivity : AppCompatActivity() {
         val conv_button: Button = findViewById(R.id.conv_button)
 
         conv_button.setOnClickListener{
-            Log.println(Log.ASSERT,"year_edit",year_edit.text.toString())
 
-            val year_text:Int = Integer.parseInt(year_edit.text.toString())
-            val month_text:Int = Integer.parseInt(month_edit.text.toString())
+
+            var year_text:Int = 0
+            var month_text:Int = 0
             var age : Int = 0
 
+            if(year_edit.length() != 0) {
+                year_text = Integer.parseInt(year_edit.text.toString())
+            }
+            if(month_edit.length() != 0){
+                month_text = Integer.parseInt(month_edit.text.toString())
+            }
 
             if(year_text == 0){
                 if(month_text < 12 )
