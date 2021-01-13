@@ -3,4 +3,7 @@
     <string name="year_txt">年</string>
     <string name="month_text">ヶ月</string>
     <string name="arrow_text">→</string>
+    <string name="home_text">ホーム</string>
+    <string name="cat_text">猫</string>
+    <string name="dog_text">犬</string>
 </resources>
