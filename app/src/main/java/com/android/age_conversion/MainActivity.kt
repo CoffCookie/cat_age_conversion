@@ -34,9 +34,6 @@ class MainActivity : AppCompatActivity() {
         var age:Int = 0
 
         when(item?.itemId){
-            R.id.home -> {
-
-            }
             R.id.cat_text -> {
                 imageView.setImageResource(R.drawable.cat)
                 pet_text.text = "猫の年齢"
